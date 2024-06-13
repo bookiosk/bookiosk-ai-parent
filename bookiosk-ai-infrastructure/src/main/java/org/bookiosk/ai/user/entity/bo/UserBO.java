@@ -1,4 +1,4 @@
-package org.bookiosk.ai.user.entity.BO;
+package org.bookiosk.ai.user.entity.bo;
 
 /**
  * @author bookiosk

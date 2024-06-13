@@ -20,6 +20,7 @@
 
         <spring-boot.version>2.7.2</spring-boot.version>
         <mybatis-plus.version>3.5.6</mybatis-plus.version>
+        <gson.version>2.10.1</gson.version>
     </properties>
 
     <modules>
@@ -116,6 +117,14 @@
                 <version>1.2.83</version>
             </dependency>
             <!-- Misc End -->
+
+            <!-- Gson -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <!-- Gson End-->
         </dependencies>
     </dependencyManagement>
 
