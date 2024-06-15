@@ -14,7 +14,7 @@ import java.nio.file.Paths;
  * @author Frank Zhang
  */
 @SpringBootApplication(scanBasePackages = {"org.bookiosk.ai", "com.alibaba.cola"})
-@MapperScan("org.bookiosk.ai")
+@MapperScan("org.bookiosk.ai.**.mapper")
 public class Application {
 
     public static void main(String[] args) {

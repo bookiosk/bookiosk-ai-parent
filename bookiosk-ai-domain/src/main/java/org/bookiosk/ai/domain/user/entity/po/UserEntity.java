@@ -1,9 +1,12 @@
-package org.bookiosk.ai.user.entity.po;
+package org.bookiosk.ai.domain.user.entity.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,9 +18,9 @@ import lombok.Setter;
  * @author Baomidou
  * @since 2024-06-13
  */
-@Getter
-@Setter
-public class UserPO implements Serializable {
+@Data
+@TableName("user")
+public class UserEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -72,7 +75,7 @@ public class UserPO implements Serializable {
     /**
      * 是否删除
      */
-    private Byte isDelete;
+    private Integer isDelete;
 
     /**
      * 用户角色 0 - 普通用户 1 - 管理员
