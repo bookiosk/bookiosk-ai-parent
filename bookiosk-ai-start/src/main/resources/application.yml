@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.55.61.179:3306/bookiosk-ai?allowPublicKeyRetrieval=true
+    username: root
+    password: Tt98.0512
