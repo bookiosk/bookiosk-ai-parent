@@ -6,25 +6,19 @@ import lombok.Getter;
  * @author bookiosk
  */
 @Getter
-public enum ErrorCodeEnum implements ErrorInterface{
+public enum AiErrorEnumUser implements ErrorInterface{
 
-    /**
-     * systemError
-     */
-    SYSTEM_ERROR("SYSTEM_ERROR", "系统异常"),
-
-    /**
-     * bizError
-     */
+    REGISTER_MSG_EMPTY("AI001","注册信息为空"),
+    REGISTER_USER_ACCOUNT_EMPTY("AI002","注册信息为空"),
     ;
+
 
     private final String errCode;
 
     private final String errMsg;
 
-    ErrorCodeEnum(String errCode, String errMsg) {
+    AiErrorEnumUser (String errCode, String errMsg) {
         this.errCode = errCode;
         this.errMsg = errMsg;
     }
-
 }

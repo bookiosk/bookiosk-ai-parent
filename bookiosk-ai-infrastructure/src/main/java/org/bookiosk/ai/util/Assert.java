@@ -1,6 +1,7 @@
 package org.bookiosk.ai.util;
 
 import com.alibaba.cola.exception.BizException;
+import org.bookiosk.ai.exception.AiException;
 
 import java.util.Collection;
 import java.util.Map;
@@ -76,6 +77,18 @@ public class Assert {
 
     public static void notNull(Object object) {
         notNull(object, "[Assertion failed] Must not null");
+    }
+
+    public static void notEmpty(String string) {
+        if (string == null || string.isEmpty()) {
+            throw new BizException(string);
+        }
+    }
+
+    public static void notEmpty(String string, String errorCode, String errMessage) {
+        if (string == null || string.isEmpty()) {
+            throw new BizException(errorCode, errMessage);
+        }
     }
 
     public static void notEmpty(Collection<?> collection, String errorCode, String errMessage) {

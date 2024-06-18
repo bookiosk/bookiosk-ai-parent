@@ -16,6 +16,7 @@ public class UserAppImpl {
     private UserGateway userGateway;
 
     public Boolean userRegister(User user) {
-
+        UserAppHelper.userRegisterCheck(user);
+        return null;
     }
 }
